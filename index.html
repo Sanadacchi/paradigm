@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Paradigm Architects | Innovation & Sustainability</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            nickel: 'var(--color-nickel)',
+            fuscous: 'var(--color-fuscous)',
+            pine: 'var(--color-pine)',
+            leather: 'var(--color-leather)',
+          },
+          fontFamily: {
+            architectural: ['ABSTER', 'Syncopate', 'sans-serif'],
+            body: ['Ginora Sans', 'Century Gothic', 'Questrial', 'sans-serif'],
+            gothic: ['Century Gothic', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "framer-motion": "https://esm.sh/framer-motion@11.11.17?external=react,react-dom",
+    "lucide-react": "https://esm.sh/lucide-react@0.475.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Questrial&display=swap');
+
+    @font-face {
+      font-family: 'ABSTER';
+      src: url('/fonts/abster-500.otf') format('opentype');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Ginora Sans';
+      src: url('/fonts/Ginora-Sans-Regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Ginora Sans';
+      src: url('/fonts/Ginora-Sans-Light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Ginora Sans';
+      src: url('/fonts/Ginora-Sans-Semi-Bold.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Ginora Sans';
+      src: url('/fonts/Ginora-Sans-Bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    :root {
+      --color-nickel: #C6C6C5;
+      --color-fuscous: #535150;
+      --color-pine: #6C5A4C;
+      --color-leather: #A07457;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--color-nickel);
+      color: var(--color-fuscous);
+      font-family: 'Ginora Sans', 'Century Gothic', 'Questrial', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .font-architectural {
+      font-family: 'ABSTER', 'Syncopate', sans-serif;
+    }
+
+    .font-body {
+      font-family: 'Ginora Sans', 'Century Gothic', 'Questrial', sans-serif;
+    }
+
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--color-nickel);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--color-fuscous);
+    }
+  </style>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
